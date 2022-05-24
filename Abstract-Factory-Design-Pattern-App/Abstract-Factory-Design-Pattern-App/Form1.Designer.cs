@@ -36,6 +36,7 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblKaydol = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,12 +51,12 @@
             this.txtkullaniciAdi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtkullaniciAdi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtkullaniciAdi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtkullaniciAdi.Location = new System.Drawing.Point(188, 136);
+            this.txtkullaniciAdi.Location = new System.Drawing.Point(190, 138);
             this.txtkullaniciAdi.Name = "txtkullaniciAdi";
             this.txtkullaniciAdi.PasswordChar = '\0';
             this.txtkullaniciAdi.PlaceholderText = "";
             this.txtkullaniciAdi.SelectedText = "";
-            this.txtkullaniciAdi.Size = new System.Drawing.Size(174, 45);
+            this.txtkullaniciAdi.Size = new System.Drawing.Size(172, 45);
             this.txtkullaniciAdi.TabIndex = 0;
             // 
             // txtSifre
@@ -69,19 +70,19 @@
             this.txtSifre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSifre.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSifre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSifre.Location = new System.Drawing.Point(188, 217);
+            this.txtSifre.Location = new System.Drawing.Point(190, 219);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '\0';
             this.txtSifre.PlaceholderText = "";
             this.txtSifre.SelectedText = "";
-            this.txtSifre.Size = new System.Drawing.Size(174, 45);
+            this.txtSifre.Size = new System.Drawing.Size(172, 45);
             this.txtSifre.TabIndex = 1;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(143, 54);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(118, 45);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(172, 24);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -91,7 +92,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(36, 146);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(23, 148);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(146, 24);
             this.guna2HtmlLabel2.TabIndex = 3;
@@ -101,7 +102,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 217);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(40, 219);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(60, 24);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -118,27 +119,40 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Blue;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(188, 319);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(190, 297);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(151, 55);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(149, 55);
             this.guna2GradientButton1.TabIndex = 6;
             this.guna2GradientButton1.Text = "GIRIS";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(309, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(284, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(502, 443);
+            this.pictureBox1.Size = new System.Drawing.Size(500, 443);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // lblKaydol
+            // 
+            this.lblKaydol.BackColor = System.Drawing.Color.Transparent;
+            this.lblKaydol.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
+            this.lblKaydol.Location = new System.Drawing.Point(229, 374);
+            this.lblKaydol.Name = "lblKaydol";
+            this.lblKaydol.Size = new System.Drawing.Size(83, 24);
+            this.lblKaydol.TabIndex = 8;
+            this.lblKaydol.Text = "KAYDOL";
+            this.lblKaydol.Click += new System.EventHandler(this.lblKaydol_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblKaydol);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -163,6 +177,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblKaydol;
     }
 }
 

@@ -17,6 +17,18 @@ namespace Abstract_Factory_Design_Pattern_App
             InitializeComponent();
         }
 
-      
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Rezervasyon rezervasyon = new Rezervasyon();
+            rezervasyon.Show();
+            this.Hide();
+        }
+
+        private void lblKaydol_Click(object sender, EventArgs e)
+        {
+            kaydol kaydol= new kaydol();
+            kaydol.Show();
+            this.Hide();
+        }
     }
 }

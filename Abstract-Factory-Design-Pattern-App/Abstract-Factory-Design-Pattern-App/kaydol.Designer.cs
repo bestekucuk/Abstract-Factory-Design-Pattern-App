@@ -57,6 +57,7 @@
             this.txtboxKullaniciAdi.SelectedText = "";
             this.txtboxKullaniciAdi.Size = new System.Drawing.Size(195, 45);
             this.txtboxKullaniciAdi.TabIndex = 1;
+            this.txtboxKullaniciAdi.TextChanged += new System.EventHandler(this.txtboxKullaniciAdi_TextChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -67,6 +68,7 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(146, 24);
             this.guna2HtmlLabel2.TabIndex = 4;
             this.guna2HtmlLabel2.Text = "KULLANICI ADI";
+            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // btnKaydol
             // 
@@ -84,6 +86,7 @@
             this.btnKaydol.Size = new System.Drawing.Size(151, 55);
             this.btnKaydol.TabIndex = 7;
             this.btnKaydol.Text = "KAYDOL";
+            this.btnKaydol.Click += new System.EventHandler(this.btnKaydol_Click);
             // 
             // txtAdSoyad
             // 
@@ -94,6 +97,7 @@
             this.txtAdSoyad.Size = new System.Drawing.Size(104, 24);
             this.txtAdSoyad.TabIndex = 8;
             this.txtAdSoyad.Text = "AD SOYAD";
+            this.txtAdSoyad.Click += new System.EventHandler(this.txtAdSoyad_Click);
             // 
             // txtKimlikNo
             // 
@@ -104,6 +108,7 @@
             this.txtKimlikNo.Size = new System.Drawing.Size(104, 24);
             this.txtKimlikNo.TabIndex = 9;
             this.txtKimlikNo.Text = "KIMLIK NO";
+            this.txtKimlikNo.Click += new System.EventHandler(this.txtKimlikNo_Click);
             // 
             // txtSifre
             // 
@@ -114,6 +119,7 @@
             this.txtSifre.Size = new System.Drawing.Size(60, 24);
             this.txtSifre.TabIndex = 10;
             this.txtSifre.Text = "SIFRE";
+            this.txtSifre.Click += new System.EventHandler(this.txtSifre_Click);
             // 
             // txtboxAdSoyad
             // 
@@ -133,6 +139,7 @@
             this.txtboxAdSoyad.SelectedText = "";
             this.txtboxAdSoyad.Size = new System.Drawing.Size(195, 45);
             this.txtboxAdSoyad.TabIndex = 11;
+            this.txtboxAdSoyad.TextChanged += new System.EventHandler(this.txtboxAdSoyad_TextChanged);
             // 
             // txtboxKimlikNo
             // 
@@ -152,6 +159,7 @@
             this.txtboxKimlikNo.SelectedText = "";
             this.txtboxKimlikNo.Size = new System.Drawing.Size(195, 45);
             this.txtboxKimlikNo.TabIndex = 12;
+            this.txtboxKimlikNo.TextChanged += new System.EventHandler(this.txtboxKimlikNo_TextChanged);
             // 
             // txtboxSifre
             // 
@@ -171,6 +179,7 @@
             this.txtboxSifre.SelectedText = "";
             this.txtboxSifre.Size = new System.Drawing.Size(195, 45);
             this.txtboxSifre.TabIndex = 13;
+            this.txtboxSifre.TextChanged += new System.EventHandler(this.txtboxSifre_TextChanged);
             // 
             // kaydol
             // 

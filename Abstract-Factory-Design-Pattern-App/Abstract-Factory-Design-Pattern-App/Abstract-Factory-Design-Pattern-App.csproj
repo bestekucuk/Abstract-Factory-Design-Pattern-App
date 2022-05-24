@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include=".cs" />
     <Compile Include="Cadir.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -71,6 +70,12 @@
     <Compile Include="Otobus_Otel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seyahat.cs" />
     <Compile Include="SoyutFabrika.cs" />
     <Compile Include="Ucak.cs" />
@@ -91,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
