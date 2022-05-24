@@ -50,11 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cadir.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Giris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
     </Compile>
     <Compile Include="IKonaklama.cs" />
     <Compile Include="IUlasim.cs" />
@@ -71,14 +71,20 @@
     <Compile Include="Otobus_Otel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezarvasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezarvasyon.Designer.cs">
+      <DependentUpon>Rezarvasyon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seyahat.cs" />
     <Compile Include="SoyutFabrika.cs" />
     <Compile Include="SqlBaglantisi.cs" />
     <Compile Include="Ucak.cs" />
     <Compile Include="Ucak_Cadir.cs" />
     <Compile Include="Ucak_Otel.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="kaydol.resx">
       <DependentUpon>kaydol.cs</DependentUpon>
@@ -92,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Rezarvasyon.resx">
+      <DependentUpon>Rezarvasyon.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

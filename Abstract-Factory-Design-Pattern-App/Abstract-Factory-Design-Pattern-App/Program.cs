@@ -16,7 +16,7 @@ namespace Abstract_Factory_Design_Pattern_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Giris());
         }
     }
 }

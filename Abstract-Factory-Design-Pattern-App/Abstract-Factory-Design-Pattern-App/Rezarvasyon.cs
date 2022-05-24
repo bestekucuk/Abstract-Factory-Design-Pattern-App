@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    public partial class Form1 : Form
+    public partial class Rezarvasyon : Form
     {
-        public Form1()
+        public Rezarvasyon()
         {
             InitializeComponent();
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            kaydol kaydol = new kaydol();
-            this.Hide();
-            kaydol.Show();
         }
     }
 }

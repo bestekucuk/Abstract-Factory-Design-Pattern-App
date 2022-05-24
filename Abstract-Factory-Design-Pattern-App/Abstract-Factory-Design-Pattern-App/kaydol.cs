@@ -19,6 +19,7 @@ namespace Abstract_Factory_Design_Pattern_App
 
         private void btnKaydol_Click(object sender, EventArgs e)
         {
+            Giris giris = new Giris();
             Kullanicilar kullanici1 = new Kullanicilar();
             kullanici1.AdSoyad=txtboxKullaniciAdi.Text;
             kullanici1.KimlikNo = txtboxKimlikNo.Text;
@@ -26,6 +27,9 @@ namespace Abstract_Factory_Design_Pattern_App
             kullanici1.Sifre = txtboxSifre.Text;
             kullanici1.Kaydet(kullanici1);
             MessageBox.Show("Başarıyla Kaydolundu");
+            this.Hide();
+            giris.Show();
+
         }
     }
 }

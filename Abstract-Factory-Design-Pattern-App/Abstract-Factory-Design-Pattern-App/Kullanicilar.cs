@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
@@ -30,7 +31,37 @@ namespace Abstract_Factory_Design_Pattern_App
                 sqlBaglantisi.baglan().Close();
 
             }
+        public SqlDataReader KullanıcıKontrol(Guna.UI2.WinForms.Guna2TextBox KullaniciAdi,Guna.UI2.WinForms.Guna2TextBox Sifre)
+        {
+            SqlBaglantisi baglanti = new SqlBaglantisi();
+            baglanti.baglan();
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Connection = baglanti.baglan();
+            sqlCommand.CommandText = "select*from KullanıcıBilgileri where KullaniciAdi='" + KullaniciAdi.Text + "'";
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+            if (reader.Read() == true)
+            {
+                if (Sifre.Text == reader["Sifre"].ToString())
+                {
+                    Rezarvasyon rezarvasyon = new Rezarvasyon();
+                    rezarvasyon.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Şifrenizi kontrol ediniz", "Hata1", MessageBoxButtons.OK);
+                    
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bilgilerinizi konrol ediniz ", "Hata2");
+                
+            }
+           baglanti.baglan().Close();
+            return reader;
 
         }
+
+    }
     }
 
