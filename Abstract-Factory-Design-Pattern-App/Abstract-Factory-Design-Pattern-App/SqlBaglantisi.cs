@@ -12,7 +12,7 @@ namespace Abstract_Factory_Design_Pattern_App
         
         public SqlConnection baglan()
         {
-            SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=Seyahat;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-8O41OVS\\SQLEXPRESS;Initial Catalog=Seyahat;Integrated Security=True");
             connection.Open();
             return connection;
         }

@@ -42,6 +42,8 @@ namespace Abstract_Factory_Design_Pattern_App
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // cbKonaklama
@@ -57,9 +59,10 @@ namespace Abstract_Factory_Design_Pattern_App
             this.cbKonaklama.Items.AddRange(new object[] {
             "Otel",
             "Cadir"});
-            this.cbKonaklama.Location = new System.Drawing.Point(449, 311);
+            this.cbKonaklama.Location = new System.Drawing.Point(505, 380);
+            this.cbKonaklama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbKonaklama.Name = "cbKonaklama";
-            this.cbKonaklama.Size = new System.Drawing.Size(202, 36);
+            this.cbKonaklama.Size = new System.Drawing.Size(268, 36);
             this.cbKonaklama.TabIndex = 39;
             // 
             // cbUlasim
@@ -75,9 +78,10 @@ namespace Abstract_Factory_Design_Pattern_App
             this.cbUlasim.Items.AddRange(new object[] {
             "Ucak",
             "Otobus"});
-            this.cbUlasim.Location = new System.Drawing.Point(451, 214);
+            this.cbUlasim.Location = new System.Drawing.Point(507, 260);
+            this.cbUlasim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbUlasim.Name = "cbUlasim";
-            this.cbUlasim.Size = new System.Drawing.Size(202, 36);
+            this.cbUlasim.Size = new System.Drawing.Size(268, 36);
             this.cbUlasim.TabIndex = 38;
             // 
             // tpDonus
@@ -86,11 +90,12 @@ namespace Abstract_Factory_Design_Pattern_App
             this.tpDonus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tpDonus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tpDonus.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.tpDonus.Location = new System.Drawing.Point(451, 120);
+            this.tpDonus.Location = new System.Drawing.Point(507, 145);
+            this.tpDonus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tpDonus.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.tpDonus.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.tpDonus.Name = "tpDonus";
-            this.tpDonus.Size = new System.Drawing.Size(200, 36);
+            this.tpDonus.Size = new System.Drawing.Size(267, 44);
             this.tpDonus.TabIndex = 37;
             this.tpDonus.Value = new System.DateTime(2022, 5, 24, 14, 26, 43, 526);
             // 
@@ -100,11 +105,12 @@ namespace Abstract_Factory_Design_Pattern_App
             this.tpGidis.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tpGidis.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tpGidis.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.tpGidis.Location = new System.Drawing.Point(449, 47);
+            this.tpGidis.Location = new System.Drawing.Point(505, 55);
+            this.tpGidis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tpGidis.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.tpGidis.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.tpGidis.Name = "tpGidis";
-            this.tpGidis.Size = new System.Drawing.Size(202, 36);
+            this.tpGidis.Size = new System.Drawing.Size(269, 44);
             this.tpGidis.TabIndex = 36;
             this.tpGidis.Value = new System.DateTime(2022, 5, 24, 14, 26, 43, 526);
             // 
@@ -126,18 +132,20 @@ namespace Abstract_Factory_Design_Pattern_App
             "Antalya",
             "İzmir",
             "Kusadası"});
-            this.cbLokasyon.Location = new System.Drawing.Point(433, -71);
+            this.cbLokasyon.Location = new System.Drawing.Point(577, -87);
+            this.cbLokasyon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbLokasyon.Name = "cbLokasyon";
-            this.cbLokasyon.Size = new System.Drawing.Size(202, 36);
+            this.cbLokasyon.Size = new System.Drawing.Size(268, 36);
             this.cbLokasyon.TabIndex = 35;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(185, 132);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(153, 159);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(196, 24);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(249, 30);
             this.guna2HtmlLabel1.TabIndex = 34;
             this.guna2HtmlLabel1.Text = "Seyahat Donus Tarihi";
             // 
@@ -145,9 +153,10 @@ namespace Abstract_Factory_Design_Pattern_App
             // 
             this.txtSifre.BackColor = System.Drawing.Color.Transparent;
             this.txtSifre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.txtSifre.Location = new System.Drawing.Point(190, 226);
+            this.txtSifre.Location = new System.Drawing.Point(159, 275);
+            this.txtSifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(191, 24);
+            this.txtSifre.Size = new System.Drawing.Size(245, 30);
             this.txtSifre.TabIndex = 33;
             this.txtSifre.Text = "Ulasim Tipini Seciniz";
             // 
@@ -155,9 +164,10 @@ namespace Abstract_Factory_Design_Pattern_App
             // 
             this.txtKimlikNo.BackColor = System.Drawing.Color.Transparent;
             this.txtKimlikNo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.txtKimlikNo.Location = new System.Drawing.Point(194, 47);
+            this.txtKimlikNo.Location = new System.Drawing.Point(165, 55);
+            this.txtKimlikNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKimlikNo.Name = "txtKimlikNo";
-            this.txtKimlikNo.Size = new System.Drawing.Size(186, 24);
+            this.txtKimlikNo.Size = new System.Drawing.Size(237, 30);
             this.txtKimlikNo.TabIndex = 32;
             this.txtKimlikNo.Text = "Seyahat Gidis Tarihi";
             // 
@@ -165,9 +175,10 @@ namespace Abstract_Factory_Design_Pattern_App
             // 
             this.txtAdSoyad.BackColor = System.Drawing.Color.Transparent;
             this.txtAdSoyad.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.txtAdSoyad.Location = new System.Drawing.Point(-36, -71);
+            this.txtAdSoyad.Location = new System.Drawing.Point(-48, -87);
+            this.txtAdSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAdSoyad.Name = "txtAdSoyad";
-            this.txtAdSoyad.Size = new System.Drawing.Size(401, 24);
+            this.txtAdSoyad.Size = new System.Drawing.Size(510, 30);
             this.txtAdSoyad.TabIndex = 31;
             this.txtAdSoyad.Text = "Seyahat etmek istediginiz lokasyonu seciniz";
             // 
@@ -182,9 +193,10 @@ namespace Abstract_Factory_Design_Pattern_App
             this.btnEkle.FillColor2 = System.Drawing.Color.Blue;
             this.btnEkle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
             this.btnEkle.ForeColor = System.Drawing.Color.White;
-            this.btnEkle.Location = new System.Drawing.Point(502, 487);
+            this.btnEkle.Location = new System.Drawing.Point(575, 596);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(151, 55);
+            this.btnEkle.Size = new System.Drawing.Size(201, 68);
             this.btnEkle.TabIndex = 30;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
@@ -193,9 +205,10 @@ namespace Abstract_Factory_Design_Pattern_App
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(150, 323);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(106, 395);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(231, 24);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(295, 30);
             this.guna2HtmlLabel2.TabIndex = 29;
             this.guna2HtmlLabel2.Text = "Konaklama Tipini Seciniz";
             // 
@@ -212,26 +225,58 @@ namespace Abstract_Factory_Design_Pattern_App
             this.guna2ComboBox1.Items.AddRange(new object[] {
             "Marmaris",
             "Fethiye"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(449, 392);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(505, 479);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(202, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(268, 36);
             this.guna2ComboBox1.TabIndex = 41;
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(106, 392);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(47, 479);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(275, 24);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(353, 30);
             this.guna2HtmlLabel3.TabIndex = 40;
             this.guna2HtmlLabel3.Text = "Gideceginiz lokasyonu seciniz";
             // 
+            // lblID
+            // 
+            this.lblID.BackColor = System.Drawing.Color.Transparent;
+            this.lblID.Location = new System.Drawing.Point(851, 67);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(16, 18);
+            this.lblID.TabIndex = 42;
+            this.lblID.Text = "ID";
+            // 
+            // txtID
+            // 
+            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID.DefaultText = "";
+            this.txtID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID.Location = new System.Drawing.Point(873, 55);
+            this.txtID.Name = "txtID";
+            this.txtID.PasswordChar = '\0';
+            this.txtID.PlaceholderText = "";
+            this.txtID.SelectedText = "";
+            this.txtID.Size = new System.Drawing.Size(200, 36);
+            this.txtID.TabIndex = 43;
+            // 
             // Rezarvasyon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 617);
+            this.ClientSize = new System.Drawing.Size(1203, 759);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.lblID);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.cbKonaklama);
@@ -245,7 +290,7 @@ namespace Abstract_Factory_Design_Pattern_App
             this.Controls.Add(this.txtAdSoyad);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.guna2HtmlLabel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Rezarvasyon";
             this.Text = "Rezarvasyon";
             this.ResumeLayout(false);
@@ -268,5 +313,7 @@ namespace Abstract_Factory_Design_Pattern_App
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblID;
+        private Guna.UI2.WinForms.Guna2TextBox txtID;
     }
 }
