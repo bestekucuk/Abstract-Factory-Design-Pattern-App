@@ -8,5 +8,7 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public abstract class SoyutFabrika
     {
+        public abstract IUlasim GetUlasim();
+        public abstract IKonaklama GetKonaklama();
     }
 }

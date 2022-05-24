@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    internal interface IKonaklama
+    public interface IKonaklama
     {
+        void BuildKonaklama();
     }
 }

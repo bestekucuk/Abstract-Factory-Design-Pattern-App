@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    internal class Ucak:IUlasim
+    public class Ucak:IUlasim
         
     {
+        public void BuildUlasim()
+        {
+
+        }
 
     }
 }

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    internal interface IUlasim
+    public interface IUlasim
 
 
     {
+        void BuildUlasim();
     }
 }

@@ -8,5 +8,9 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     internal class Cadir: IKonaklama
     {
+        public void BuildKonaklama()
+        {
+
+        }
     }
 }

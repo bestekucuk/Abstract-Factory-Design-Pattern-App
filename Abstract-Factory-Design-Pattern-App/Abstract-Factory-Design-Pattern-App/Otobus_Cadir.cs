@@ -8,5 +8,13 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public class Otobus_Cadir:SoyutFabrika
     {
+        public override IUlasim GetUlasim()
+        {
+            throw new NotImplementedException();
+        }
+        public override IKonaklama GetKonaklama()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

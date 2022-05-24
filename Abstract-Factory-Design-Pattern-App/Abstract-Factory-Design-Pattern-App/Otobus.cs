@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    internal class Otobus: IUlasim
+    public class Otobus: IUlasim
     {
+        public void BuildUlasim()
+        {
+
+        }
     }
 }
