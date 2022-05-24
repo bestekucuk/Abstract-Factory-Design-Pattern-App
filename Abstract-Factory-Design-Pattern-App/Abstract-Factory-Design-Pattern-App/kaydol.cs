@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    public partial class Form1 : Form
+    public partial class kaydol : Form
     {
-        public Form1()
+        public kaydol()
         {
             InitializeComponent();
         }
-
-      
     }
 }

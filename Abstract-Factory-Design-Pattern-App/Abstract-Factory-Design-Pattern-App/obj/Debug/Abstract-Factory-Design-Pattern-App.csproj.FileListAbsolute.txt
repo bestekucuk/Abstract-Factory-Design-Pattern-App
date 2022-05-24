@@ -1,0 +1,6 @@
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.AssemblyReference.cache
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.SuggestedBindingRedirects.cache
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Form1.resources
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Properties.Resources.resources
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.GenerateResource.cache
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.CoreCompileInputs.cache
