@@ -8,9 +8,10 @@ using System.Windows.Forms;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
+    
     class Kullanicilar
     {
-       
+            
             public int Id { get; set; }
             public string AdSoyad { get; set; }
             public string KimlikNo { get; set; }

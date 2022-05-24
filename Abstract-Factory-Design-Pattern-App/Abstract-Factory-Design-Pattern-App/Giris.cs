@@ -28,6 +28,8 @@ namespace Abstract_Factory_Design_Pattern_App
         {
             Kullanicilar kullanici = new Kullanicilar();
             kullanici.KullanıcıKontrol(txtkullaniciAdi, txtSifre);
+           
         }
+       
     }
 }

@@ -195,6 +195,7 @@ namespace Abstract_Factory_Design_Pattern_App
             this.btnEkle.Size = new System.Drawing.Size(201, 68);
             this.btnEkle.TabIndex = 30;
             this.btnEkle.Text = "EKLE";
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // guna2HtmlLabel2
             // 

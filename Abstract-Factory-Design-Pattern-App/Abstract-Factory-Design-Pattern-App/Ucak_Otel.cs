@@ -10,11 +10,11 @@ namespace Abstract_Factory_Design_Pattern_App
     {
         public override IUlasim GetUlasim()
         {
-            throw new NotImplementedException();
+            return new Ucak();
         }
         public override IKonaklama GetKonaklama()
         {
-            throw new NotImplementedException();
+            return new Otel();
         }
     }
 }
