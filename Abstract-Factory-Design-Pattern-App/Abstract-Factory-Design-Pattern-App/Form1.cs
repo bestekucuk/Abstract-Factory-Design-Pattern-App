@@ -17,6 +17,11 @@ namespace Abstract_Factory_Design_Pattern_App
             InitializeComponent();
         }
 
-      
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            kaydol kaydol = new kaydol();
+            this.Hide();
+            kaydol.Show();
+        }
     }
 }
