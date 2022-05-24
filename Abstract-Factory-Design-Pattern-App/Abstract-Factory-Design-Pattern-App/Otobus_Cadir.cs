@@ -8,13 +8,16 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public class Otobus_Cadir:SoyutFabrika
     {
+        private string Lokasyon;
+        private DateTime GidisTarih;
+        private DateTime DonusTarih;
         public override IUlasim GetUlasim()
         {
-            return new Otobus();
+            return new Otobus(this.Lokasyon, this.GidisTarih, this.DonusTarih);
         }
         public override IKonaklama GetKonaklama()
         {
-            return new Cadir();
+            return new Cadir(this.GidisTarih, this.DonusTarih);
         }
     }
 }

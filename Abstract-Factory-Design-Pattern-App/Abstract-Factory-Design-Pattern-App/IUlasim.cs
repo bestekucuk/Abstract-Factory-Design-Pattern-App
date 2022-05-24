@@ -8,9 +8,9 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public interface IUlasim
 
-
     {
-       
-        void BuildUlasim();
+        string UlasimTarih();
+        string UlasimYer();
+        
     }
 }

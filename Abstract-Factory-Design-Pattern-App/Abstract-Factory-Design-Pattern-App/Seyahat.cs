@@ -8,7 +8,7 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public class Seyahat
     {
-       
+        
         private SoyutFabrika _soyutFabrika;
         private IUlasim _ulasim;
         private IKonaklama _konaklama;
@@ -20,11 +20,6 @@ namespace Abstract_Factory_Design_Pattern_App
             _konaklama=_soyutFabrika.GetKonaklama();
         }
 
-        public void BuildSeyahat()
-        {
-            _konaklama.BuildKonaklama();
-            _ulasim.BuildUlasim();
-
-        }
+        
     }
 }

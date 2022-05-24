@@ -9,14 +9,19 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public class Otel: IKonaklama
     {
-        public void BuildKonaklama()
+        private DateTime GidisTarih;
+        private DateTime DonusTarih;
+        public Otel(DateTime GidisTarihi,DateTime DonusTarihi)
         {
-            SqlBaglantisi baglanti = new SqlBaglantisi();
-            baglanti.baglan();
-            SqlCommand command = new SqlCommand("insert into SeyahatBilgi (KonaklamaTipi) values (@KonaklamaTipi)", baglanti.baglan());
-            command.Parameters.AddWithValue("@KonaklamaTipi", "Otel");
-            command.ExecuteNonQuery();
-            baglanti.baglan().Close();
+            this.GidisTarih = GidisTarihi;
+            this.DonusTarih = DonusTarihi;
+        }
+        public string GetKonaklama()
+        {
+            return GidisTarih.ToShortDateString() + "" + DonusTarih.ToShortDateString();
+
         }
     }
+
+
 }

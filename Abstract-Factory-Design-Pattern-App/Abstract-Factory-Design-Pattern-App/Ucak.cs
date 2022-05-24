@@ -9,16 +9,24 @@ namespace Abstract_Factory_Design_Pattern_App
     public class Ucak:IUlasim
         
     {
-        
-         
-        public void BuildUlasim()
+        private string Lokasyon;
+        private DateTime GidisTarihi;
+        private DateTime DonusTarihi;
+        public Ucak(string Lokasyon,DateTime GidisTarihi,DateTime DonusTarihi)
         {
-            SqlBaglantisi baglanti = new SqlBaglantisi();
-            baglanti.baglan();
-            SqlCommand command = new SqlCommand("insert into SeyahatBilgi (UlasimTipi) values (@UlasimTipi)", baglanti.baglan());
-            command.Parameters.AddWithValue("@UlasimTipi","Uçak");
-            command.ExecuteNonQuery();
-            baglanti.baglan().Close();
+           
+            this.Lokasyon = Lokasyon;
+            this.GidisTarihi = GidisTarihi;
+            this.DonusTarihi = DonusTarihi;
+        }
+
+        public string UlasimTarih()
+        {
+            return GidisTarihi.ToShortDateString() + " " + DonusTarihi.ToShortDateString();
+        }
+        public string UlasimYer()
+        {
+            return Lokasyon;
         }
 
     }

@@ -8,6 +8,7 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public interface IKonaklama
     {
-        void BuildKonaklama();
+
+        string GetKonaklama();
     }
 }

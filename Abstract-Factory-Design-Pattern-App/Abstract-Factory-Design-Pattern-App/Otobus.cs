@@ -7,16 +7,26 @@ using System.Data.SqlClient;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    public class Otobus: IUlasim
+    public class Otobus : IUlasim
     {
-        public void BuildUlasim()
+        private string Lokasyon;
+        private DateTime GidisTarihi;
+        private DateTime DonusTarihi;
+        public Otobus(string Lokasyon, DateTime GidisTarihi, DateTime DonusTarihi)
         {
-            SqlBaglantisi baglanti = new SqlBaglantisi();
-            baglanti.baglan();
-            SqlCommand command = new SqlCommand("insert into SeyahatBilgileri (UlasimTipi) values (@UlasimTipi)", baglanti.baglan());
-            command.Parameters.AddWithValue("@UlasimTipi", "Otobüs");
-            baglanti.baglan().Close();
 
+            this.Lokasyon = Lokasyon;
+            this.GidisTarihi = GidisTarihi;
+            this.DonusTarihi = DonusTarihi;
+        }
+
+        public string UlasimTarih()
+        {
+            return GidisTarihi.ToShortDateString() + " " + DonusTarihi.ToShortDateString();
+        }
+        public string UlasimYer()
+        {
+            return Lokasyon;
         }
     }
 }

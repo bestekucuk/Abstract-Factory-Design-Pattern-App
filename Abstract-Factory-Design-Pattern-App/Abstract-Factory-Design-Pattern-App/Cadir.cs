@@ -7,15 +7,19 @@ using System.Data.SqlClient;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
-    internal class Cadir: IKonaklama
+    
+    public class Cadir:IKonaklama
     {
-        public void BuildKonaklama()
+        private DateTime GidisTarihi;
+        private DateTime DonusTarihi;
+        public Cadir(DateTime GidisTarihi,DateTime DonusTarihi)
         {
-            SqlBaglantisi baglanti = new SqlBaglantisi();
-            baglanti.baglan();
-            SqlCommand command = new SqlCommand("insert into SeyahatBilgileri (KonaklamaTipi) values (@KonaklamaTipi)", baglanti.baglan());
-            command.Parameters.AddWithValue("@KonaklamaTipi", "Çadır");
-            baglanti.baglan().Close();
+            this.GidisTarihi = GidisTarihi;
+            this.DonusTarihi = DonusTarihi;
+        }
+        public string GetKonaklama()
+        {
+            return GidisTarihi.ToShortDateString() + "" + DonusTarihi.ToShortDateString();
         }
     }
 }
