@@ -1,6 +1,5 @@
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.AssemblyReference.cache
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.SuggestedBindingRedirects.cache
-C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Form1.resources
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Properties.Resources.resources
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.GenerateResource.cache
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.CoreCompileInputs.cache
@@ -12,7 +11,6 @@ C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.CopyComplete
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.exe
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.pdb
-C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Rezervasyon.resources
 C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\Abstract-Factory-Design-Pattern-App.exe.config
 C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\Abstract-Factory-Design-Pattern-App.exe
 C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\Abstract-Factory-Design-Pattern-App.pdb
@@ -27,3 +25,5 @@ C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factor
 C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.csproj.CopyComplete
 C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.exe
 C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.pdb
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Giris.resources
+C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Rezarvasyon.resources

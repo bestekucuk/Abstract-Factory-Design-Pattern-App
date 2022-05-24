@@ -11,7 +11,7 @@ namespace Abstract_Factory_Design_Pattern_App
         public DateTime GidisTarih;
         public DateTime DonusTarih;
         private string Lokasyon;
-        public Otobus_Otel(DateTime GidisTarih,DateTime DonusTarih,string Lokasyon)
+        public Otobus_Otel(string Lokasyon,DateTime GidisTarih,DateTime DonusTarih)
         {
             this.GidisTarih = GidisTarih;
             this.DonusTarih = DonusTarih;

@@ -21,10 +21,35 @@ namespace Abstract_Factory_Design_Pattern_App
         {
             string Ulasim = cbUlasim.Text;
             string Konaklama = cbKonaklama.Text;
-           
+            if (Ulasim == "Ucak" && Konaklama == "Otel")
+            {
+                Seyahat seyahat = new Seyahat(new Ucak_Otel(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
+                seyahat.BuildSeyahat();
+            }
+            else if (Ulasim == "Ucak" && Konaklama == "Cadir")
+            {
+                Seyahat seyahat = new Seyahat(new Ucak_Cadir(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
+                seyahat.BuildSeyahat();
 
+             }
+            else if (Ulasim == "Otobus" && Konaklama == "Otel")
+            {
+                Seyahat seyahat = new Seyahat(new Otobus_Otel(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
+                seyahat.BuildSeyahat();
 
-           
+            }
+            else if (Ulasim == "Otobus" && Konaklama == "Cadir")
+            {
+                Seyahat seyahat = new Seyahat(new Otobus_Cadir(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
+                seyahat.BuildSeyahat();
+
+            }
+
+        }
+
+        public void DosyayaKaydet(string UlasimTip,string KonaklamaTip,string Lokasyon)
+        {
+            
         }
     }
 }

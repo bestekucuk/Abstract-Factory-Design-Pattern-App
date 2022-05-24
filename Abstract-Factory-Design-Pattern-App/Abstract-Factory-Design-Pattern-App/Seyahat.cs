@@ -19,7 +19,14 @@ namespace Abstract_Factory_Design_Pattern_App
            _ulasim=_soyutFabrika.GetUlasim();
             _konaklama=_soyutFabrika.GetKonaklama();
         }
+        public void BuildSeyahat()
+        {
+            _ulasim.UlasimYer();
+            _ulasim.UlasimTarih();
+            _konaklama.GetKonaklama();
 
+        }
+           
         
     }
 }
