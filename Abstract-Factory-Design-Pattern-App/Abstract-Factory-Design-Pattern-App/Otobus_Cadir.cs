@@ -8,9 +8,9 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public class Otobus_Cadir:SoyutFabrika
     {
-        private string Lokasyon;
-        private DateTime GidisTarih;
-        private DateTime DonusTarih;
+        public string Lokasyon;
+        public DateTime GidisTarih;
+        public DateTime DonusTarih;
         public Otobus_Cadir(string Lokasyon,DateTime GidisTarih,DateTime DonusTarih)
         {
             this.Lokasyon = Lokasyon;       

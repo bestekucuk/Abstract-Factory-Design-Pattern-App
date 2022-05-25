@@ -27,3 +27,5 @@ C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factor
 C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract-Factory-Design-Pattern-App.pdb
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Giris.resources
 C:\Users\beste\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\obj\Debug\Abstract_Factory_Design_Pattern_App.Rezarvasyon.resources
+C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\Source\Repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\Newtonsoft.Json.xml

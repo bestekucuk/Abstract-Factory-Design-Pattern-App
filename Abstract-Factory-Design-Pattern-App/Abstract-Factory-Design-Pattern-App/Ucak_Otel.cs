@@ -8,9 +8,9 @@ namespace Abstract_Factory_Design_Pattern_App
 {
     public class Ucak_Otel:SoyutFabrika
     {
-        private string Lokasyon;
-        private DateTime GidisTarih;
-        private DateTime DonusTarih;
+        public string Lokasyon;
+        public DateTime GidisTarih;
+        public DateTime DonusTarih;
         public Ucak_Otel(string Lokasyon, DateTime GidisTarih, DateTime DonusTarih)
         {
             this.Lokasyon = Lokasyon;
