@@ -46,6 +46,8 @@ namespace Abstract_Factory_Design_Pattern_App
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnJsonSeyahat = new Guna.UI2.WinForms.Guna2Button();
             this.btnJsonKullaniciBilgi = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHtmlSeyahat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHtmlKullaniciBilgi = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // cbKonaklama
@@ -107,7 +109,7 @@ namespace Abstract_Factory_Design_Pattern_App
             this.tpGidis.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tpGidis.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tpGidis.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.tpGidis.Location = new System.Drawing.Point(505, 55);
+            this.tpGidis.Location = new System.Drawing.Point(495, 55);
             this.tpGidis.Margin = new System.Windows.Forms.Padding(4);
             this.tpGidis.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.tpGidis.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -142,17 +144,19 @@ namespace Abstract_Factory_Design_Pattern_App
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(153, 159);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(151, 159);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(249, 30);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(269, 30);
             this.guna2HtmlLabel1.TabIndex = 34;
             this.guna2HtmlLabel1.Text = "Seyahat Donus Tarihi";
             // 
             // txtSifre
             // 
+            this.txtSifre.AutoSize = false;
             this.txtSifre.BackColor = System.Drawing.Color.Transparent;
             this.txtSifre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
             this.txtSifre.Location = new System.Drawing.Point(159, 275);
@@ -164,12 +168,13 @@ namespace Abstract_Factory_Design_Pattern_App
             // 
             // txtKimlikNo
             // 
+            this.txtKimlikNo.AutoSize = false;
             this.txtKimlikNo.BackColor = System.Drawing.Color.Transparent;
             this.txtKimlikNo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Italic);
             this.txtKimlikNo.Location = new System.Drawing.Point(165, 55);
             this.txtKimlikNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtKimlikNo.Name = "txtKimlikNo";
-            this.txtKimlikNo.Size = new System.Drawing.Size(237, 30);
+            this.txtKimlikNo.Size = new System.Drawing.Size(255, 30);
             this.txtKimlikNo.TabIndex = 32;
             this.txtKimlikNo.Text = "Seyahat Gidis Tarihi";
             // 
@@ -302,11 +307,43 @@ namespace Abstract_Factory_Design_Pattern_App
             this.btnJsonKullaniciBilgi.Text = "JsonKullaniciBilgi";
             this.btnJsonKullaniciBilgi.Click += new System.EventHandler(this.btnJsonKullaniciBilgi_Click);
             // 
+            // btnHtmlSeyahat
+            // 
+            this.btnHtmlSeyahat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHtmlSeyahat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHtmlSeyahat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHtmlSeyahat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHtmlSeyahat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHtmlSeyahat.ForeColor = System.Drawing.Color.White;
+            this.btnHtmlSeyahat.Location = new System.Drawing.Point(873, 371);
+            this.btnHtmlSeyahat.Name = "btnHtmlSeyahat";
+            this.btnHtmlSeyahat.Size = new System.Drawing.Size(200, 45);
+            this.btnHtmlSeyahat.TabIndex = 47;
+            this.btnHtmlSeyahat.Text = "HtmlSeyahatBilgi";
+            this.btnHtmlSeyahat.Click += new System.EventHandler(this.btnHtmlSeyahat_Click);
+            // 
+            // btnHtmlKullaniciBilgi
+            // 
+            this.btnHtmlKullaniciBilgi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHtmlKullaniciBilgi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHtmlKullaniciBilgi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHtmlKullaniciBilgi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHtmlKullaniciBilgi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHtmlKullaniciBilgi.ForeColor = System.Drawing.Color.White;
+            this.btnHtmlKullaniciBilgi.Location = new System.Drawing.Point(873, 464);
+            this.btnHtmlKullaniciBilgi.Name = "btnHtmlKullaniciBilgi";
+            this.btnHtmlKullaniciBilgi.Size = new System.Drawing.Size(200, 45);
+            this.btnHtmlKullaniciBilgi.TabIndex = 48;
+            this.btnHtmlKullaniciBilgi.Text = "HtmlKullaniciBilgi";
+            this.btnHtmlKullaniciBilgi.Click += new System.EventHandler(this.btnHtmlKullaniciBilgi_Click);
+            // 
             // Rezarvasyon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 759);
+            this.Controls.Add(this.btnHtmlKullaniciBilgi);
+            this.Controls.Add(this.btnHtmlSeyahat);
             this.Controls.Add(this.btnJsonKullaniciBilgi);
             this.Controls.Add(this.btnJsonSeyahat);
             this.Controls.Add(this.txtID);
@@ -351,5 +388,7 @@ namespace Abstract_Factory_Design_Pattern_App
         private Guna.UI2.WinForms.Guna2TextBox txtID;
         private Guna.UI2.WinForms.Guna2Button btnJsonSeyahat;
         private Guna.UI2.WinForms.Guna2Button btnJsonKullaniciBilgi;
+        private Guna.UI2.WinForms.Guna2Button btnHtmlSeyahat;
+        private Guna.UI2.WinForms.Guna2Button btnHtmlKullaniciBilgi;
     }
 }

@@ -73,18 +73,16 @@ namespace Abstract_Factory_Design_Pattern_App
             reader.Read();
             using (StreamWriter writer2=new StreamWriter(KullaniciBilgi+".html",append:true))
             {
-                writer2.WriteLine("KimlikNo:"+reader["KimlikNo"]);
-                writer2.WriteLine("AdSoyad:"+ reader["AdSoyad"]);
+                writer2.WriteLine("KimlikNo:"+"  "+reader["KimlikNo"]+"\t");
+                writer2.WriteLine("AdSoyad:"+ " "+reader["AdSoyad"]);
             }
 
             using (StreamWriter writer = new StreamWriter(UlasimTip + ".html", append: true))
             {
-                writer.WriteLine(UlasimTip+cbLokasyon.Text);
+                writer.WriteLine(UlasimTip+"\t"+cbLokasyon.Text);
+                writer.WriteLine(KonaklamaTip+"\t" + tpGidis.Value.ToShortDateString() + " - " + tpDonus.Value.ToShortDateString());
             }
-            using (StreamWriter writer1=new StreamWriter(KonaklamaTip+".html",append:true))
-            {
-                writer1.WriteLine(KonaklamaTip + tpGidis.Value.ToShortDateString() + " - " + tpDonus.Value.ToShortDateString());
-            }
+            
         }
         public void JsonKaydet()
         {   
@@ -151,6 +149,22 @@ namespace Abstract_Factory_Design_Pattern_App
             prc.StartInfo.FileName = KullaniciPath;
             prc.Start();
         }
-    }
+
+        private void btnHtmlSeyahat_Click(object sender, EventArgs e)
+        {
+            string KullaniciPath = @"C:\Users\Lenovo\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\Otobus.html";
+            System.Diagnostics.Process prc = new System.Diagnostics.Process();
+            prc.StartInfo.FileName = KullaniciPath;
+            prc.Start();
+        }
+
+        private void btnHtmlKullaniciBilgi_Click(object sender, EventArgs e)
+        {
+            string KullaniciPath = @"C:\Users\Lenovo\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\1.html";
+            System.Diagnostics.Process prc = new System.Diagnostics.Process();
+            prc.StartInfo.FileName = KullaniciPath;
+            prc.Start();
+        }
+    }   
     }
 
