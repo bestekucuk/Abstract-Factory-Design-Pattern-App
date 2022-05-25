@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cadir.cs" />
+    <Compile Include="JSON.cs" />
+    <Compile Include="HTML.cs" />
     <Compile Include="Giris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +62,7 @@
       <DependentUpon>Giris.cs</DependentUpon>
     </Compile>
     <Compile Include="IKonaklama.cs" />
+    <Compile Include="IRapor.cs" />
     <Compile Include="IUlasim.cs" />
     <Compile Include="kaydol.cs">
       <SubType>Form</SubType>
@@ -86,6 +89,7 @@
     <Compile Include="Ucak.cs" />
     <Compile Include="Ucak_Cadir.cs" />
     <Compile Include="Ucak_Otel.cs" />
+    <Compile Include="XML.cs" />
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>

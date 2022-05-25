@@ -11,7 +11,7 @@ namespace Abstract_Factory_Design_Pattern_App
         
         private SoyutFabrika _soyutFabrika;
         private IUlasim _ulasim;
-        private IKonaklama _konaklama;
+        private IKonaklama _konaklama;                                                                                   
 
         public Seyahat(SoyutFabrika soyutFabrika)
         {

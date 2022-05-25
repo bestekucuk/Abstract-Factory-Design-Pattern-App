@@ -14,7 +14,6 @@ namespace Abstract_Factory_Design_Pattern_App
         private DateTime DonusTarihi;
         public Ucak(string Lokasyon,DateTime GidisTarihi,DateTime DonusTarihi)
         {
-           
             this.Lokasyon = Lokasyon;
             this.GidisTarihi = GidisTarihi;
             this.DonusTarihi = DonusTarihi;
