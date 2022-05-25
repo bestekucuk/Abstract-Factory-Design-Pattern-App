@@ -11,6 +11,7 @@ using System.IO;
 using System.Data.SqlClient;
 using Newtonsoft.Json;
 using System;
+using System.Xml;
 
 namespace Abstract_Factory_Design_Pattern_App
 {
@@ -30,16 +31,17 @@ namespace Abstract_Factory_Design_Pattern_App
             {
                 Seyahat seyahat = new Seyahat(new Ucak_Otel(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
                 seyahat.BuildSeyahat();
-                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, cbLokasyon.Text, txtID.Text);
-                JsonSeyahatBilgi(new Ucak_Otel(cbLokasyon.Text,tpGidis.Value,tpDonus.Value));
+                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, guna2ComboBox1.Text, txtID.Text);
+                JsonSeyahatBilgi(new Ucak_Otel(guna2ComboBox1.Text, tpGidis.Value,tpDonus.Value));
+                
 
             }
             else if (Ulasim == "Ucak" && Konaklama == "Cadir")
             {
                 Seyahat seyahat = new Seyahat(new Ucak_Cadir(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
                 seyahat.BuildSeyahat();
-                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, cbLokasyon.Text,txtID.Text);
-                JsonSeyahatBilgi(new Ucak_Cadir(cbLokasyon.Text, tpGidis.Value, tpDonus.Value));
+                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, guna2ComboBox1.Text, txtID.Text);
+                JsonSeyahatBilgi(new Ucak_Cadir(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
 
 
             }
@@ -47,19 +49,20 @@ namespace Abstract_Factory_Design_Pattern_App
             {
                 Seyahat seyahat = new Seyahat(new Otobus_Otel(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
                 seyahat.BuildSeyahat();
-                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, cbLokasyon.Text,txtID.Text);
-                JsonSeyahatBilgi(new Otobus_Otel(cbLokasyon.Text, tpGidis.Value, tpDonus.Value));
+                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, guna2ComboBox1.Text, txtID.Text);
+                JsonSeyahatBilgi(new Otobus_Otel(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
 
             }
             else if (Ulasim == "Otobus" && Konaklama == "Cadir")
             {
                 Seyahat seyahat = new Seyahat(new Otobus_Cadir(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
                 seyahat.BuildSeyahat();
-                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, cbLokasyon.Text,txtID.Text);
-                JsonSeyahatBilgi(new Otobus_Cadir(cbLokasyon.SelectedText, tpGidis.Value, tpDonus.Value));
+                HtmlKaydet(cbUlasim.Text, cbKonaklama.Text, guna2ComboBox1.Text, txtID.Text);
+                JsonSeyahatBilgi(new Otobus_Cadir(guna2ComboBox1.Text, tpGidis.Value, tpDonus.Value));
 
 
             }
+            MessageBox.Show("Rezervasyonunuz başarıyla oluşturulmuştur.");
 
         }
 
@@ -79,7 +82,7 @@ namespace Abstract_Factory_Design_Pattern_App
 
             using (StreamWriter writer = new StreamWriter(UlasimTip + ".html", append: true))
             {
-                writer.WriteLine(UlasimTip+"\t"+cbLokasyon.Text);
+                writer.WriteLine(UlasimTip+"\t"+ guna2ComboBox1.Text);
                 writer.WriteLine(KonaklamaTip+"\t" + tpGidis.Value.ToShortDateString() + " - " + tpDonus.Value.ToShortDateString());
             }
             
@@ -165,6 +168,59 @@ namespace Abstract_Factory_Design_Pattern_App
             prc.StartInfo.FileName = KullaniciPath;
             prc.Start();
         }
+
+        private void btnXML_Click(object sender, EventArgs e)
+        {
+            XML();
+           
+            string KullaniciPath = @"C:\Users\Lenovo\source\repos\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\Abstract-Factory-Design-Pattern-App\bin\Debug\Rapor.xml";
+            System.Diagnostics.Process prc = new System.Diagnostics.Process();
+            prc.StartInfo.FileName = KullaniciPath;
+            prc.Start();
+        }
+        public void XML()
+        {
+
+                SqlBaglantisi baglanti = new SqlBaglantisi();
+                baglanti.baglan();
+                SqlCommand command = new SqlCommand("select *from KullanıcıBilgileri where Id='" + txtID.Text + "'");
+                command.Connection = baglanti.baglan();
+                SqlDataReader reader = command.ExecuteReader();
+                reader.Read();
+                Kullanicilar K = new Kullanicilar();
+                string xmlPath = Application.StartupPath + "\\Rapor.xml";
+                XmlTextWriter customer = new XmlTextWriter(xmlPath, UTF8Encoding.UTF8);
+
+                customer.Formatting = System.Xml.Formatting.Indented;
+
+                customer.WriteStartDocument();
+
+                customer.WriteStartElement("Rapor");
+
+                customer.WriteStartElement("Musteri");
+                
+                customer.WriteAttributeString("KimlikNo", (string)reader["KimlikNo"]);
+
+                customer.WriteAttributeString("AdSoyad", (string)reader["AdSoyad"]);
+
+                customer.WriteAttributeString("ID", txtID.Text);
+
+                customer.WriteElementString("Konaklama", cbKonaklama.Text);
+
+                customer.WriteElementString("Ulasim", cbUlasim.Text);
+
+                customer.WriteElementString("Lokasyon", guna2ComboBox1.Text);
+
+                customer.WriteEndElement();
+                customer.Close();
+
+
+
+        }
+
+
+
+
     }   
     }
 

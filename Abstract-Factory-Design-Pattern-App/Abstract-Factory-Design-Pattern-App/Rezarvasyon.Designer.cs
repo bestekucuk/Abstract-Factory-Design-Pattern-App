@@ -48,6 +48,7 @@ namespace Abstract_Factory_Design_Pattern_App
             this.btnJsonKullaniciBilgi = new Guna.UI2.WinForms.Guna2Button();
             this.btnHtmlSeyahat = new Guna.UI2.WinForms.Guna2Button();
             this.btnHtmlKullaniciBilgi = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXML = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // cbKonaklama
@@ -300,7 +301,7 @@ namespace Abstract_Factory_Design_Pattern_App
             this.btnJsonKullaniciBilgi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnJsonKullaniciBilgi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnJsonKullaniciBilgi.ForeColor = System.Drawing.Color.White;
-            this.btnJsonKullaniciBilgi.Location = new System.Drawing.Point(873, 275);
+            this.btnJsonKullaniciBilgi.Location = new System.Drawing.Point(873, 229);
             this.btnJsonKullaniciBilgi.Name = "btnJsonKullaniciBilgi";
             this.btnJsonKullaniciBilgi.Size = new System.Drawing.Size(200, 45);
             this.btnJsonKullaniciBilgi.TabIndex = 46;
@@ -315,7 +316,7 @@ namespace Abstract_Factory_Design_Pattern_App
             this.btnHtmlSeyahat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnHtmlSeyahat.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHtmlSeyahat.ForeColor = System.Drawing.Color.White;
-            this.btnHtmlSeyahat.Location = new System.Drawing.Point(873, 371);
+            this.btnHtmlSeyahat.Location = new System.Drawing.Point(873, 302);
             this.btnHtmlSeyahat.Name = "btnHtmlSeyahat";
             this.btnHtmlSeyahat.Size = new System.Drawing.Size(200, 45);
             this.btnHtmlSeyahat.TabIndex = 47;
@@ -330,18 +331,34 @@ namespace Abstract_Factory_Design_Pattern_App
             this.btnHtmlKullaniciBilgi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnHtmlKullaniciBilgi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHtmlKullaniciBilgi.ForeColor = System.Drawing.Color.White;
-            this.btnHtmlKullaniciBilgi.Location = new System.Drawing.Point(873, 464);
+            this.btnHtmlKullaniciBilgi.Location = new System.Drawing.Point(873, 353);
             this.btnHtmlKullaniciBilgi.Name = "btnHtmlKullaniciBilgi";
             this.btnHtmlKullaniciBilgi.Size = new System.Drawing.Size(200, 45);
             this.btnHtmlKullaniciBilgi.TabIndex = 48;
             this.btnHtmlKullaniciBilgi.Text = "HtmlKullaniciBilgi";
             this.btnHtmlKullaniciBilgi.Click += new System.EventHandler(this.btnHtmlKullaniciBilgi_Click);
             // 
+            // btnXML
+            // 
+            this.btnXML.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXML.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXML.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXML.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXML.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXML.ForeColor = System.Drawing.Color.White;
+            this.btnXML.Location = new System.Drawing.Point(873, 426);
+            this.btnXML.Name = "btnXML";
+            this.btnXML.Size = new System.Drawing.Size(200, 45);
+            this.btnXML.TabIndex = 49;
+            this.btnXML.Text = "XMLKullaniciBilgi";
+            this.btnXML.Click += new System.EventHandler(this.btnXML_Click);
+            // 
             // Rezarvasyon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 759);
+            this.Controls.Add(this.btnXML);
             this.Controls.Add(this.btnHtmlKullaniciBilgi);
             this.Controls.Add(this.btnHtmlSeyahat);
             this.Controls.Add(this.btnJsonKullaniciBilgi);
@@ -390,5 +407,6 @@ namespace Abstract_Factory_Design_Pattern_App
         private Guna.UI2.WinForms.Guna2Button btnJsonKullaniciBilgi;
         private Guna.UI2.WinForms.Guna2Button btnHtmlSeyahat;
         private Guna.UI2.WinForms.Guna2Button btnHtmlKullaniciBilgi;
+        private Guna.UI2.WinForms.Guna2Button btnXML;
     }
 }
